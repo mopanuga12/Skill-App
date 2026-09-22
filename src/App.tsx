@@ -22,8 +22,8 @@ function App() {
     {
       setLoading(true);
       setRelevant(null);
-      const appId = "YOUR_ADZUNA_APP_ID";
-      const appKey = "YOUR_ADZUNA_APP_KEY"
+      const appId = "6d2fb34f";
+      const appKey = "0770cc86d9082a9528d97c2e47e71348"
       const response = await fetch(`https://api.adzuna.com/v1/api/jobs/gb/search/${count}?app_id=${appId}&app_key=${appKey}&results_per_page=20&what=${skill}`)
       .then((value) => value.json())
       .then((data) => {
